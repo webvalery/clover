@@ -1,0 +1,1142 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+    scrollbar-width: thin
+    scrollbar-color: #29292b #ffffff
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar 
+        width: 13px
+    *::-webkit-scrollbar-track 
+        background: #fafafa
+    *::-webkit-scrollbar-thumb 
+        background-color: #29292b
+        border-radius: 8px
+        border: 3px solid #fafafa
+    
+body
+	font-family: 'Montserrat', sans-serif
+	color: #000
+	overflow-x: hidden
+	background: center/contain url("../img/4.png") #fff
+	&.active
+		overflow: hidden
+
+html
+    scroll-behavior: smooth
+    overflow-x: hidden
+a
+    text-decoration: none
+    color: inherit
+li
+    list-style: none
+.shadow
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+    background: rgba(0,0,0,.6)
+    backdrop-filter: blur(10px)
+    &.active
+        z-index: 10
+        display: block
+        
+.container
+    max-width: 1170px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+.nav_toggle
+	margin-left: auto
+	height: 50px
+	width: 50px
+	padding: 10px
+	z-index: 200
+	cursor: pointer
+	display: none
+	background-color: #3c9726
+.nav_toggle-item 
+    display: block
+    width: 100%
+    height: 4px
+    position: relative
+    background-color: #fff
+    transition: background .2s linear
+.nav_toggle-item:before, .nav_toggle-item:after 
+    content: ""
+    width: 100%
+    height: 4px
+    position: absolute
+    left: 0
+    background-color: #fff
+    z-index: 1
+    transition: transform .2s linear
+.nav_toggle-item:before 
+    top: -8px
+.nav_toggle-item:after 
+    bottom: -8px
+.nav_toggle.active 
+	.nav_toggle-item
+		background: transparent
+		&::before
+			transform-origin: left top
+			transform: rotate(45deg) translate3D(3px,-5px,0)
+		&::after
+			transform-origin: left bottom
+			transform: rotate(-45deg) translate3D(2px, 6px, 0)
+.title
+	font-size: 64px
+	color: #191919
+	font-weight: 500
+	position: relative
+	margin-bottom: 35px
+	z-index: 1
+	&::before
+		position: absolute
+		content: ""
+		top: 50%
+		left: -30px
+		width: 50px
+		height: 2px
+		background: #339900
+.text
+	font-size: 18px
+	line-height: 28px
+	color: #262626
+	font-weight: 500
+
+.btn
+	outline: none
+	cursor: pointer
+	display: table
+	font-size: 18px
+	color: #ffffff
+	font-weight: 600
+	padding: 28px 70px
+	background: #339900
+	border: 2px solid #339900
+	text-transform: uppercase
+
+	transition: all .2s ease
+	&:hover
+		background: transparent
+		color: #333
+.more
+	font-size: 20px
+	color: #3c9726
+	font-weight: 500
+	display: table
+	position: relative
+	padding-right: 45px
+	&::before
+		position: absolute
+		content: "\2192"
+		top: 50%
+		right: 0
+		font-size: 30px
+		line-height: 1
+		transform: translateY(-50%)
+
+.undertext
+	font-size: 14px
+	color: #4c4c4c
+	font-weight: 500
+
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 2000
+	background: #fafafa
+	&.active
+		display: none
+.load
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	width: 100px
+	height: 100px
+	hr
+		border: 0
+		margin: 0
+		width: 40%
+		height: 40%
+		position: absolute
+		border-radius: 50%
+		animation: spin 2s ease infinite
+		&:first-child
+			background: #27610d
+			animation-delay: -1.5s
+		&:nth-child(2)
+			background: #368a21
+			animation-delay: -1s
+		&:nth-child(3)
+			background: #4e8b3b
+			animation-delay: -0.5s
+		&:last-child
+			background: #4eb82e
+
+
+@keyframes spin
+	0%,100%
+		transform: translate(0)
+	25%
+		transform: translate(160%)
+	50%
+		transform: translate(160%, 160%)
+	75%
+		transform: translate(0, 160%)
+
+
+
+/* header */
+.header
+	position: relative
+	background: #fff
+.header_bg
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 20%
+	width: 55%
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #092b07
+		opacity: .6
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+.header_inner
+	display: flex
+	align-items: center
+	padding: 55px 0 10px
+	border-bottom: 2px solid #9fa79d
+	margin-bottom: 55px
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		width: 45%	
+		height: 4px
+		background: #339900
+		z-index: -2
+.header_contacts
+	margin-right: 20px
+	font-size: 12px
+	font-weight: 600
+	p
+		margin-bottom: 4px
+		color: #333
+	a
+		color: #339900
+		display: table
+		&:last-child
+			margin-left: auto
+
+.nav
+	display: flex
+	align-items: center
+	flex: 1
+	ul
+		margin-left: auto
+		display: flex
+		align-items: center
+		li
+			margin-left: 65px
+			a
+				font-size: 14px
+				color: #ffffff
+				font-weight: 500
+
+				transition: all .2s ease
+				&:hover
+					color: #339900
+
+.header_info
+	display: flex
+
+.header_left
+	width: 40%
+.header_right
+	width: 70%
+	margin-left: -10%
+	position: relative
+	img
+		width: 100%
+.player_info
+	position: absolute
+	top: 30%
+	right: 0
+	display: flex
+	max-width: 455px
+	width: 100%
+	min-height: 145px
+
+.player_info_play
+	width: 135px
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #339900
+	img
+		width: auto
+.player_info_descr
+	flex: 1
+	background-size: cover
+	background-position: center
+	display: flex
+	align-items: flex-end
+	padding: 15px 25px
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,.5)
+	p
+		font-size: 18px
+		color: #ffffff
+		font-weight: 500
+		position: relative
+.header_text
+	font-size: 28px
+	color: #4c4c4c
+	position: relative
+	padding-top: 35px
+	margin-bottom: 35px
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		width: 72px
+		height: 2px
+		background: #339900
+	strong
+		font-weight: 600
+.header_production
+	font-size: 18px
+	color: #339900
+	text-transform: uppercase
+	font-weight: 600
+	border-bottom: 2px solid #339900
+
+.logo
+	margin-right: 45px
+
+
+/* benefits */
+.rotate_text
+	position: absolute
+	writing-mode: vertical-lr
+	transform: scale(-1, -1)
+	font-size: 30px
+	color: #000000
+	font-weight: 500
+	left: -70px
+	top: -270px
+	text-transform: uppercase
+	&::before
+		position: absolute
+		content: ""
+		height: 80px
+		width: 1px
+		background: #339900
+		left: 50%
+		top: -100px
+		transform: translateX(-50%)
+.benefits
+	padding: 75px 0
+	.title
+		text-align: center
+		&::before
+			top: initial
+			left: 50%
+			bottom: -20px
+			transform: translateX(-50%)
+.benefits_inner
+	display: flex
+	justify-content: space-between
+	position: relative
+	z-index: 1
+.benefits_item
+	width: 30%
+	.text
+		padding: 55px 0 0 80px
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			top: 10px
+			left: 30px
+			width: 40px
+			height: 60px
+			background: center/contain url("../img/icon.svg") no-repeat
+.benefits_img
+	min-height: 130px
+	display: flex
+	align-items: center
+
+/* about */
+.about
+	padding-top: 60px
+	position: relative
+.about_bg
+	position: absolute
+	top: 0
+	right: 0
+	width: 56%
+	height: 100%
+	object-fit: cover
+.about_inner
+	display: flex
+	justify-content: space-between
+	position: relative
+	margin-bottom: -80px
+.box
+	position: absolute
+	top: -50%
+	left: -30px
+	pointer-events: none
+.about_item
+	width: 48%
+	&:last-child
+		padding-bottom: 35px
+	p
+		width: 80%
+	ul
+		margin-bottom: 30px
+		margin-left: 32px
+		width: 90%
+		li
+			margin-bottom: 25px
+			font-size: 18px
+			color: #3c9726
+			font-weight: bold
+			list-style: decimal-leading-zero
+			span
+				font-size: 15px
+				line-height: 22px
+				color: #4c4c4c
+				font-weight: 500
+	.player_info
+		margin-top: 30px
+		position: initial
+		max-width: 500px
+
+/* production */
+.production
+	background: center/cover url("../img/production.png")
+	padding-top: 145px
+	.container
+		position: relative
+		.rotate_text
+			color: #fff
+			top: 0
+.production_inner 
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-template-rows: repeat(3, 1fr)
+	grid-column-gap: 30px
+	grid-row-gap: 60px
+	
+	
+
+.production_item
+	display: table
+	padding: 30px 25px
+	min-height: 290px
+	background: #fff
+	background-position: 0 0
+	background-repeat: no-repeat
+	position: relative
+	margin-bottom: -30px
+	&::before
+		position: absolute
+		content: ""
+		left: 0
+		bottom: 0
+		height: 0
+		width: 0
+		background: rgba(#3c9726, .8)
+		transition: all .2s ease
+	&:nth-child(1)
+		grid-area: 1 / 1 / 3 / 2
+	&:nth-child(2)
+		grid-area: 1 / 2 / 2 / 3
+	&:nth-child(3)
+		grid-area: 2 / 2 / 3 / 3
+	&:nth-child(4)
+		grid-area: 1 / 3 / 2 / 4
+	&:nth-child(5)
+		grid-area: 2 / 3 / 3 / 4
+	&:nth-child(6)
+		grid-area: 3 / 1 / 4 / 3
+	&:nth-child(7)
+		grid-area: 3 / 3 / 4 / 4
+	&:hover
+		&::before
+			height: 100%
+			width: 100%
+		.production_more
+			background: transparent
+			span
+				font-size: 20px
+				opacity: 1
+				visibility: visible
+			&::before
+				display: none
+		.production_text
+			opacity: 0
+.production_text
+	font-size: 20px
+	color: #333333
+	font-weight: 600
+
+	transition: all .2s ease
+	span
+		color: #3c9726
+		display: table
+.production_more
+	min-height: 65px
+	display: flex
+	align-items: center
+	font-size: 20px
+	color: #ffffff
+	font-weight: 600
+	position: absolute
+	bottom: 0
+	left: 0
+	padding: 20px 30px
+	background: rgba(#3c9726, .8)
+	&::before
+		position: absolute
+		content: ""
+		top: 50%
+		right: 25px
+		width: 10px
+		height: 10px
+		border: 2px solid #fff
+		border-left: 0
+		border-bottom: 0
+		transform: translateY(-50%) rotate(45deg)
+	span
+		display: table
+		opacity: 0
+		visibility: hidden
+		white-space: nowrap
+		font-size: 0
+
+		transition: all .2s ease
+
+/* offer */
+.offer
+	padding: 130px 0
+	.title
+		margin-bottom: 0
+.offer_top
+	display: flex
+	justify-content: space-between
+	align-items: center
+.offer_tab	
+	display: flex
+	justify-content: space-between
+	border-bottom: 1px solid #e9e9e9
+	margin: 50px 0
+	span
+		display: table
+		cursor: pointer
+		font-size: 14px
+		color: #333333
+		padding-bottom: 25px
+		font-weight: 500
+		margin-bottom: -1px	
+		border-bottom: 2px solid transparent
+
+		transition: all .2s ease
+		&:hover,
+		&.active
+			color: #000
+			border-bottom-color: #3c9726
+.offer_info
+	.undertext
+		display: none
+		&.active
+			display: block
+.card
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	border: 1px solid #e5e5e5
+	background: #fff
+	height: 100%
+	.btn
+		padding: 25px 10px
+		margin-top: auto
+		width: 100%
+		text-align: center
+.card_img
+	height: 190px
+	margin: 20зч 0
+	img
+		height: 100%
+		object-fit: contain
+.card_title
+	font-size: 20px
+	color: #333333
+	font-weight: 600
+.card_info
+	margin-bottom: 30px
+	padding: 40px 30px 0
+	background: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+.offer_slider
+	margin-top: 20px
+	.swiper-slide
+		height: auto!important
+
+.swiper-button-next,
+.swiper-button-prev
+	&::after
+		content: "\2192"
+		color: #3c9726
+		font-size: 52px
+	right: -70px
+.swiper-button-prev
+	right: initial
+	left: -70px
+	&::after
+		transform: scale(-1,-1)
+.offer_slider_outer
+	position: relative
+
+
+/* calculator */
+.calculator
+	position: relative
+	padding-bottom: 60px
+.calculator_inner
+	width: 80%
+	margin-left: auto
+	min-height: 700px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background: center/cover url("../img/calculator.png")
+	padding-left: 8%
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(to right, #165715 -50%, transparent)
+.calculator_box
+	position: absolute
+	top: -60px
+	left: 30px
+	pointer-events: none
+.calculator_title
+	font-size: 40px
+	color: #fff
+	font-weight: 900
+	margin-bottom: 40px
+	position: relative
+
+.calculator_btn
+	display: flex
+	position: relative
+	img
+		padding: 15px 20px
+		background: #53a42e
+	span
+		padding: 25px 35px
+		display: table
+		font-size: 18px
+		color: #ffffff
+		font-weight: 600
+		text-transform: uppercase
+		background: linear-gradient(to right, #439b28, #53a42e)
+
+
+/* product */
+.product
+	.container
+		position: relative
+	.title
+		text-align: center
+		&::before
+			display: none
+.product_inner
+	display: flex
+	flex-wrap: wrap
+	margin: 30px -0.5% 0
+	.card
+		width: 24%
+		margin: 1% 0.5%
+.pagination
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 40px
+	a
+		display: table
+		font-size: 18px
+		color: #339900
+		font-weight: 600
+		margin-right: 30px
+
+		transition: all .2s ease
+		&:last-child
+			margin-right: 0
+		&.active,
+		&:hover
+			color: #333
+/* news */
+.news
+	padding: 85px 0
+	position: relative
+.news_box
+	position: absolute
+	bottom: 30px
+	right: 10px
+	pointer-events: none
+.news_top
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.title
+		margin-bottom: 0
+.news_slider_outer
+	position: relative
+.news_slider
+	margin-top: 70px
+	padding: 30px 30px
+	margin: 0 -30px
+	.swiper-slide
+		height: auto!important
+.news_item
+	display: flex
+	flex-direction: column
+	background: #fff
+	height: 100%
+	box-shadow: 0 0 14px -7px rgba(0,0,0,.6)
+	&:hover
+		.news_img
+			img
+				transform: scale(1.1)
+.news_img
+	overflow: hidden
+	img
+		display: block
+		transition: all .2s ease
+		width: 100%
+.news_title
+	font-size: 20px
+	color: #333333
+	font-weight: 600
+	margin-bottom: 20px
+.news_bottom
+	display: flex
+	justify-content: space-between
+	padding-top: 25px
+	border-top: 1px solid #e9e9e9 
+	.more
+		font-size: 14px
+		font-weight: 500
+		padding-right: 35px
+		&::before
+			font-size: 24px
+.date
+	font-size: 14px
+	color: #b2b2b2
+	font-weight: 500
+.news_info
+	padding: 35px 20px 30px
+
+
+/* call_modal */	
+.call_modal
+	max-width: 350px
+	width: 100%
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 1000
+	transform: translate(-50%,-50%)
+	&.active
+		display: block
+.call_title
+	font-size: 32px
+	margin-bottom: 20px
+.call_modal_inner
+	padding: 40px 30px
+	background: #fff
+	input
+		display: block
+		outline: none
+		width: 100%
+		border: 1px solid #b2b2b2
+		padding: 15px 10px
+		margin-bottom: 10px
+	.btn
+		padding: 15px 25px
+		font-size: 16px
+		margin-top: 20px
+.close
+	font-size: 42px
+	font-weight: bold
+	color: #fff
+	margin-left: auto
+	display: table
+	cursor: pointer
+
+
+/* footer */
+.footer
+	padding: 55px 0 40px
+	background: center/cover url("../img/footer.png")
+.footer_inner
+	display: flex
+	justify-content: space-between
+.footer_info
+	display: flex
+.footer_nav
+	ul
+		margin-right: 60px
+		li
+			margin-bottom: 10px
+			a
+				font-size: 14px
+				color: #ffffff
+				font-weight: 500
+				
+				transition: all .2s ease
+				&:hover
+					color: #339900
+.footer_contacts
+	p
+		display: flex
+		align-items: center
+		font-size: 12px
+		color: #ffffff
+		font-weight: 500
+		margin-bottom: 10px
+		&:last-child
+			a
+				margin-left: 0
+			img
+				margin-right: 7px
+		img
+			margin-right: 10px
+		a
+			margin-left: 10px
+			span
+				color: #3e6929
+			&:hover
+				text-decoration: underline
+
+.footer_social
+	display: flex
+	align-items: center
+	justify-content: space-around
+	margin-top: 15px
+.footer_right
+	.logo
+		margin-right: 0
+.policy
+	font-size: 14px
+	color: #ffffff
+	font-weight: 500
+
+	transition: all .2s ease
+	&:hover
+		color: #339900
+.footer_left_policy
+	padding-top: 25px
+	border-top: 2px solid #3e6929
+
+
+/* media */
+@media ( max-width: 1730px )
+	.box
+		display: none
+	.swiper_bottom
+		padding-right: 12px
+		margin-top: 40px
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.swiper-button-next,
+		.swiper-button-prev
+			position: initial
+		.swiper-button-prev
+			margin-top: -4px
+			margin-right: 50px
+@media ( max-width: 1180px )
+	.rotate_text
+		display: none
+	.header_inner
+		padding-top: 30px
+	.nav_toggle
+		display: flex
+		justify-content: center
+		align-items: center
+	.nav
+		display: block
+		overflow: auto
+		padding: 35px 20px
+		position: fixed
+		top: 0
+		bottom: 0
+		left: 0
+		width: 230px
+		z-index: 100
+		visibility: hidden
+		transition: all .3s ease
+		transform: translateX(-700px)
+		background-color: #29292b 
+		&.active
+			transform: translateX(0)
+			visibility: visible
+		ul
+			display: block
+			li
+				margin-left: 0
+				margin-bottom: 25px
+				a
+					display: table
+					padding: 16px 22px
+					background-color: #343435
+					color: #fff
+					min-width: 170px
+					box-shadow: 2px 4px 3px rgba(0,0,0,.2)
+	.header_contacts
+		margin-bottom: 15px
+		p
+			color: #fff
+		a
+			&:last-child
+				margin-left: 0
+	.phone
+		margin: 25px 0
+		display: table
+	.header_bg
+		width: 60%
+	.news_box
+		display: none
+	.news_top
+		display: block
+		.more
+			margin: 20px 0 0 auto
+@media ( max-width: 991px )
+	.header_text
+		font-size: 20px
+	.player_info
+		min-height: 110px
+		max-width: 350px	
+	.player_info_play
+		width: 100px
+	.title
+		font-size: 46px
+	.benefits_inner
+		flex-wrap: wrap
+	.benefits_item
+		width: 44%
+		margin-bottom: 30px
+	.about_inner
+		display: block
+	.about_item
+		width: 100%
+		&:first-child
+			margin-bottom: 30px
+	.about_bg
+		width: 80%
+	.about
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(255,255,255,.6)
+			z-index: 1
+		.container
+			position: relative
+			z-index: 2
+	.production_inner 
+		grid-column-gap: 10px
+		grid-row-gap: 40px
+	
+	.production_item
+		&:nth-child(1)
+			grid-area: 1 / 1 / 2 / 2
+		&:nth-child(2)
+			grid-area: 1 / 2 / 2 / 4
+			background-position: right 0
+		&:nth-child(3)
+			grid-area: 2 / 1 / 3 / 2
+		&:nth-child(4)
+			grid-area: 2 / 2 / 3 / 3
+		&:nth-child(5)
+			grid-area: 2 / 3 / 3 / 4
+		&:nth-child(6)
+			grid-area: 3 / 1 / 4 / 3
+		&:nth-child(7)
+			grid-area: 3 / 3 / 4 / 4
+
+	.calculator_inner
+		width: 100%
+	.calculator_box
+		display: none
+	.calculator_title
+		font-size: 32px
+	.calculator_inner
+		min-height: 500px
+	.offer_tab
+		display: -webkit-box
+		overflow-x: auto
+		overflow-y: hidden
+		span
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+	.offer_top
+		display: block
+		.more
+			margin: 20px 0 0 auto
+	.footer
+		background-position: left 
+	.footer_inner
+		flex-wrap: wrap
+	.footer_right	
+		order: -1
+		width: 100%
+		margin-bottom: 30px
+	.footer_left
+		width: 100%
+	.footer_social
+		justify-content: start
+		a
+			margin-right: 20px
+	.product_inner
+		.card
+			width: 32%
+@media ( max-width: 767px )
+	.header_info
+		display: block
+	.header_left
+		width: 100%
+		background: #fff
+		position: relative
+		padding-bottom: 15px
+	.header_right	
+		width: 100%
+		margin-left: 0
+		margin-top: -30px
+	.header_bg
+		width: 68%
+	.header_text
+		font-size: 18px
+	.header_bg
+		width: 45%
+		bottom: 15%
+	.production_item
+		&:hover
+			.production_more
+				span
+					font-size: 16px
+	.product_inner
+		.card
+			width: 49%
+@media ( max-width: 670px )
+	.product_inner
+		.card
+			width: 100%
+	.benefits
+		padding: 50px 0 0
+	.benefits_item
+		width: 100%
+		margin-bottom: 30px
+	.title
+		font-size: 30px
+	.production_inner
+		grid-template-columns: repeat(2, 1fr)
+		grid-template-rows: repeat(4, 1fr)
+	.production_item
+		&:nth-child(1)
+			grid-area: 1 / 1 / 2 / 3
+		&:nth-child(2)
+			grid-area: 2 / 1 / 3 / 3
+		&:nth-child(3)
+			grid-area: 3 / 1 / 4 / 3
+		&:nth-child(4)
+			grid-area: 4 / 1 / 5 / 3
+		&:nth-child(5)
+			grid-area: 5 / 1 / 6 / 3
+		&:nth-child(6)
+			grid-area: 6 / 1 / 7 / 3
+		&:nth-child(7)
+			grid-area: 7 / 1 / 8 / 3
+	.production_text
+		font-size: 16px
+	.calculator_title
+		font-size: 24px
+	.calculator_inner
+		min-height: 340px
+		padding: 15px
+	.calculator_btn 
+		span
+			padding: 25px 20px
+			font-size: 16px
+	.offer
+		padding: 70px 0
+	.more
+		font-size: 16px
+		padding-right: 35px
+		&::before
+			top: 5px
+			font-size: 28px
+	.news
+		padding: 70px 0
+		.swiper_bottom
+			margin-top: 10px
+	.footer_info
+		display: block
+	.footer_nav
+		margin-bottom: 20px
+	.about_item 
+		p
+			width: 100%
+	.pagination
+		a
+			margin-right: 15px

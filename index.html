@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="RU">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Клевер</title>
+
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="img/icomoon/style.css">
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div class="preloader">
+         <div class="load">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+         </div>
+      </div>
+
+      <div class="shadow"></div>
+      <header class="header">
+         <div class="header_bg">
+            <img src="img/header.png" alt="" />
+         </div>
+         <div class="container">
+            <div class="header_inner">
+               <a href="index.html" class="logo">
+                  <img src="img/logo.svg" alt="logo" />
+               </a>
+               <div class="nav_toggle">
+                  <span class="nav_toggle-item"></span>
+               </div>
+               <nav class="nav">
+                  <div class="header_contacts">
+                     <p>Улан-Удэ</p>
+                     <a href="tel:79244581420"> +7 (924) 458-14-20</a>
+                     <a href="tel:79244581430"> 458-14-30 </a>
+                  </div>
+                  <div class="header_contacts">
+                     <p>Иркутск</p>
+                     <a href="tel:79248350409"> +7 (924) 835-04-09</a>
+                     <a href="tel:79248340409"> 834-04-09 </a>
+                  </div>
+                  <ul>
+                     <div class="mob-block-ul">
+                        <a href="#" class="phone">
+                           <img src="img/phone.png" alt="phone" />
+                        </a>
+                        <div class="nav-btns">
+                           <a href="#" class="nav-btn">
+                              <svg
+                                 width="25px"
+                                 height="25px"
+                                 version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 x="0px"
+                                 y="0px"
+                                 viewBox="0 0 1000 1000"
+                                 enable-background="new 0 0 1000 1000"
+                                 xml:space="preserve"
+                              >
+                                 <g>
+                                    <g class="svgBasket" transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                       <path
+                                          d="M279.2,4372.5C99,4293.9,41.4,4050.4,168,3898.9c94-109.3,115-113.1,814.9-113.1h638.5L2398,666.1c513.9-2061.3,790-3138.9,814.9-3177.2c21.1-30.7,63.3-74.8,92-95.9l53.7-40.3l2582.8-3.8l2582.8-5.7l76.7,44.1c82.4,46,163,174.5,163,262.7c0,88.2-80.5,216.7-163,262.7l-76.7,44.1H6116H3705.7l-115,460.2l-115,460.2h2636.5c2180.2,0,2644.2,3.8,2695.9,26.8c145.7,59.4,122.7-11.5,636.6,2047.9c515.8,2065.1,500.4,1984.6,398.8,2107.3c-101.6,120.8,161.1,113.1-3806.2,113.1H2407.6l-132.3,529.2c-141.9,569.5-163,617.4-293.4,671.1C1891.8,4410.9,365.5,4410.9,279.2,4372.5z M3778.6,2547.1c0-23,134.2-1091,143.8-1152.4l11.5-63.3h-533.1h-533.1l-149.6,600.2c-82.5,327.9-147.7,604-147.7,613.6C2570.6,2560.5,3778.6,2564.4,3778.6,2547.1z M5581,1945v-613.6h-517.7c-283.8,0-517.7,5.8-517.7,11.5c0,23-134.2,1091-143.8,1154.3l-11.5,61.4h596.3H5581V1945z M7373.8,2497.2c-9.6-63.3-143.8-1131.3-143.8-1154.3c0-5.8-232-11.5-517.7-11.5h-517.7V1945v613.6H6789h596.3L7373.8,2497.2z M9205,2545.2c0-9.6-65.2-285.7-147.6-613.6l-149.6-600.2h-533h-533l11.5,63.3c9.6,61.4,143.8,1129.4,143.8,1152.4C7997,2564.4,9205,2560.5,9205,2545.2z M4008.7,706.3c0-23,134.2-1091,143.8-1152.4l11.5-63.3h-418h-418L3178.4,90.8c-82.5,327.9-147.6,604-147.6,613.6C3030.8,719.8,4008.7,723.6,4008.7,706.3z M5581,104.2v-613.6h-402.7c-220.5,0-402.7,5.7-402.7,11.5c0,23-134.2,1091-143.8,1154.3l-11.5,61.4h481.3H5581V104.2z M7143.7,656.5c-9.6-63.3-143.8-1131.3-143.8-1154.3c0-5.8-180.3-11.5-402.7-11.5h-402.7v613.6v613.6h479.4h481.3L7143.7,656.5z M8744.8,704.4c0-9.6-65.2-285.7-147.7-613.6l-149.6-600.2h-418h-418l11.5,63.3c9.6,61.4,143.8,1129.4,143.8,1152.4C7766.9,723.6,8744.8,719.8,8744.8,704.4z"
+                                       />
+                                       <path
+                                          d="M3816.9-2996.3c-433.3-151.5-561.8-692.2-241.6-1012.4c126.6-126.5,241.6-170.7,433.3-172.6c140,0,176.4,7.7,260.8,51.8c145.7,76.7,205.2,134.2,278,268.4c59.4,109.3,65.2,136.1,65.2,283.8c0,151.5-5.7,172.6-69,287.6C4397.9-3025.1,4091.1-2900.4,3816.9-2996.3z"
+                                       />
+                                       <path
+                                          d="M7575.2-2996.3c-433.3-151.5-561.8-692.2-241.6-1012.4c126.5-126.5,241.6-170.7,433.3-172.6c149.6,0,172.6,5.7,283.8,65.2c210.9,115,318.3,299.1,320.2,540.7c0,128.5-7.7,161.1-67.1,278C8165.7-3027,7855.1-2898.5,7575.2-2996.3z"
+                                       />
+                                    </g>
+                                 </g>
+                              </svg>
+                           </a>
+                           <a href="#" class="nav-btn">
+                              <svg
+                                 width="25px"
+                                 height="25px"
+                                 class="svg-icon"
+                                 style="vertical-align: middle; fill: currentColor; overflow: hidden"
+                                 viewBox="0 0 1024 1024"
+                                 version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    class="svgBasket"
+                                    d="M512.476 648.247c-170.169 0-308.118-136.411-308.118-304.681 0-168.271 137.949-304.681 308.118-304.681 170.169 0 308.119 136.411 308.119 304.681C820.594 511.837 682.645 648.247 512.476 648.247L512.476 648.247zM512.476 100.186c-135.713 0-246.12 109.178-246.12 243.381 0 134.202 110.407 243.381 246.12 243.381 135.719 0 246.126-109.179 246.126-243.381C758.602 209.364 648.195 100.186 512.476 100.186L512.476 100.186zM935.867 985.115l-26.164 0c-9.648 0-17.779-6.941-19.384-16.35-2.646-15.426-6.277-30.52-11.142-44.95-24.769-87.686-81.337-164.13-159.104-214.266-63.232 35.203-134.235 53.64-207.597 53.64-73.555 0-144.73-18.537-208.084-53.922-78 50.131-134.75 126.68-159.564 214.549 0 0-4.893 18.172-11.795 46.4-2.136 8.723-10.035 14.9-19.112 14.9L88.133 985.116c-9.415 0-16.693-8.214-15.47-17.452C91.698 824.084 181.099 702.474 305.51 637.615c58.682 40.472 129.996 64.267 206.966 64.267 76.799 0 147.968-23.684 206.584-63.991 124.123 64.932 213.281 186.403 232.277 329.772C952.56 976.901 945.287 985.115 935.867 985.115L935.867 985.115z"
+                                 />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="rightSide-nav">
+                        <div class="li-nav">
+                           <li class="firstLi">
+                              <a href="#production">Каталог</a>
+                           </li>
+                           <li>
+                              <a href="#services">Услуги</a>
+                           </li>
+                           <li>
+                              <a href="#benefits" class="header_production">О компании</a>
+                           </li>
+                           <li>
+                              <a href="#map">Контакты</a>
+                           </li>
+                        </div>
+                        <div class="nav-btns">
+                           <a href="#" class="nav-btn">
+                              <svg
+                                 width="25px"
+                                 height="25px"
+                                 version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 x="0px"
+                                 y="0px"
+                                 viewBox="0 0 1000 1000"
+                                 enable-background="new 0 0 1000 1000"
+                                 xml:space="preserve"
+                              >
+                                 <g>
+                                    <g class="svgBasket" transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                       <path
+                                          d="M279.2,4372.5C99,4293.9,41.4,4050.4,168,3898.9c94-109.3,115-113.1,814.9-113.1h638.5L2398,666.1c513.9-2061.3,790-3138.9,814.9-3177.2c21.1-30.7,63.3-74.8,92-95.9l53.7-40.3l2582.8-3.8l2582.8-5.7l76.7,44.1c82.4,46,163,174.5,163,262.7c0,88.2-80.5,216.7-163,262.7l-76.7,44.1H6116H3705.7l-115,460.2l-115,460.2h2636.5c2180.2,0,2644.2,3.8,2695.9,26.8c145.7,59.4,122.7-11.5,636.6,2047.9c515.8,2065.1,500.4,1984.6,398.8,2107.3c-101.6,120.8,161.1,113.1-3806.2,113.1H2407.6l-132.3,529.2c-141.9,569.5-163,617.4-293.4,671.1C1891.8,4410.9,365.5,4410.9,279.2,4372.5z M3778.6,2547.1c0-23,134.2-1091,143.8-1152.4l11.5-63.3h-533.1h-533.1l-149.6,600.2c-82.5,327.9-147.7,604-147.7,613.6C2570.6,2560.5,3778.6,2564.4,3778.6,2547.1z M5581,1945v-613.6h-517.7c-283.8,0-517.7,5.8-517.7,11.5c0,23-134.2,1091-143.8,1154.3l-11.5,61.4h596.3H5581V1945z M7373.8,2497.2c-9.6-63.3-143.8-1131.3-143.8-1154.3c0-5.8-232-11.5-517.7-11.5h-517.7V1945v613.6H6789h596.3L7373.8,2497.2z M9205,2545.2c0-9.6-65.2-285.7-147.6-613.6l-149.6-600.2h-533h-533l11.5,63.3c9.6,61.4,143.8,1129.4,143.8,1152.4C7997,2564.4,9205,2560.5,9205,2545.2z M4008.7,706.3c0-23,134.2-1091,143.8-1152.4l11.5-63.3h-418h-418L3178.4,90.8c-82.5,327.9-147.6,604-147.6,613.6C3030.8,719.8,4008.7,723.6,4008.7,706.3z M5581,104.2v-613.6h-402.7c-220.5,0-402.7,5.7-402.7,11.5c0,23-134.2,1091-143.8,1154.3l-11.5,61.4h481.3H5581V104.2z M7143.7,656.5c-9.6-63.3-143.8-1131.3-143.8-1154.3c0-5.8-180.3-11.5-402.7-11.5h-402.7v613.6v613.6h479.4h481.3L7143.7,656.5z M8744.8,704.4c0-9.6-65.2-285.7-147.7-613.6l-149.6-600.2h-418h-418l11.5,63.3c9.6,61.4,143.8,1129.4,143.8,1152.4C7766.9,723.6,8744.8,719.8,8744.8,704.4z"
+                                       />
+                                       <path
+                                          d="M3816.9-2996.3c-433.3-151.5-561.8-692.2-241.6-1012.4c126.6-126.5,241.6-170.7,433.3-172.6c140,0,176.4,7.7,260.8,51.8c145.7,76.7,205.2,134.2,278,268.4c59.4,109.3,65.2,136.1,65.2,283.8c0,151.5-5.7,172.6-69,287.6C4397.9-3025.1,4091.1-2900.4,3816.9-2996.3z"
+                                       />
+                                       <path
+                                          d="M7575.2-2996.3c-433.3-151.5-561.8-692.2-241.6-1012.4c126.5-126.5,241.6-170.7,433.3-172.6c149.6,0,172.6,5.7,283.8,65.2c210.9,115,318.3,299.1,320.2,540.7c0,128.5-7.7,161.1-67.1,278C8165.7-3027,7855.1-2898.5,7575.2-2996.3z"
+                                       />
+                                    </g>
+                                 </g>
+                              </svg>
+                           </a>
+                           <a href="#" class="nav-btn">
+                              <svg
+                                 width="25px"
+                                 height="25px"
+                                 class="svg-icon"
+                                 style="vertical-align: middle; fill: currentColor; overflow: hidden"
+                                 viewBox="0 0 1024 1024"
+                                 version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    class="svgBasket"
+                                    d="M512.476 648.247c-170.169 0-308.118-136.411-308.118-304.681 0-168.271 137.949-304.681 308.118-304.681 170.169 0 308.119 136.411 308.119 304.681C820.594 511.837 682.645 648.247 512.476 648.247L512.476 648.247zM512.476 100.186c-135.713 0-246.12 109.178-246.12 243.381 0 134.202 110.407 243.381 246.12 243.381 135.719 0 246.126-109.179 246.126-243.381C758.602 209.364 648.195 100.186 512.476 100.186L512.476 100.186zM935.867 985.115l-26.164 0c-9.648 0-17.779-6.941-19.384-16.35-2.646-15.426-6.277-30.52-11.142-44.95-24.769-87.686-81.337-164.13-159.104-214.266-63.232 35.203-134.235 53.64-207.597 53.64-73.555 0-144.73-18.537-208.084-53.922-78 50.131-134.75 126.68-159.564 214.549 0 0-4.893 18.172-11.795 46.4-2.136 8.723-10.035 14.9-19.112 14.9L88.133 985.116c-9.415 0-16.693-8.214-15.47-17.452C91.698 824.084 181.099 702.474 305.51 637.615c58.682 40.472 129.996 64.267 206.966 64.267 76.799 0 147.968-23.684 206.584-63.991 124.123 64.932 213.281 186.403 232.277 329.772C952.56 976.901 945.287 985.115 935.867 985.115L935.867 985.115z"
+                                 />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </ul>
+               </nav>
+            </div>
+            <div class="company">
+               <div class="company__header">
+                  <h1 class="company__title">О компании</h1>
+                  <span class="company__prev">Назад</span>
+               </div>
+               <div class="company__body">
+                 <div class="company__body-text-wrap">
+                   <p class="company__text-main">
+                     «Клевер» - это широкий ассортимент упаковочной продукции из картона и альтернативной упаковки собственного производства, а также производства завода «Селенгинский ЦКК».
+                   </p>
+                   <p class="company__text-desc">
+                     Наша компания уже более 8 лет оказывает комплексные услуги по производству и продаже упаковки на территории Республики Бурятия и Иркутской области. Мы производим качественную упаковку из картона, бумаги и пластика, а также чековую термоленту.
+                   </p>
+                 </div>
+                 <div class="company__body-text-wrap">
+                   <p class="company__benefits-title">Почему выбирают нас:</p>
+                   <ol class="company__body-benefits">
+                     <li class="company__benefits-item">Всегда в наличии широкий ассортимент</li>
+                     <li class="company__benefits-item">Отлаженная система логистики</li>
+                     <li class="company__benefits-item">Изготавливаем упаковку по индивидуальным размерам</li>
+                     <li class="company__benefits-item">Наносим печати и логотипы на изделия</li>
+                     <li class="company__benefits-item">Вся продукция из 100% целлюлозы</li>
+                     <li class="company__benefits-item">Профессиональные специалисты своего дела</li>
+                   </ol>
+                 </div>
+               </div>
+            </div>
+            <div class="header_info">
+               <div class="header_left" data-aos="fade-right">
+                  <p class="header_text">
+                     <strong> Широкий ассортимент </strong>
+                     изделий из картона и альтернативной упаковки
+                  </p>
+                  <a href="#" class="header_production"
+                     ><p>О компании</p>
+                     <div class="img-block">
+                        <img src="img/btn-arrow.png" alt="" class="arrow" />
+                     </div>
+                  </a>
+               </div>
+               <div class="header_right">
+                  <img class="img_block" src="img/box.png" alt="box" data-aos="fade-up" data-aos-delay="300" />
+                  <a href="#production" class="player_info" data-aos="fade-left" data-aos-delay="500">
+                     <div class="player_info_play">
+                        <img src="img/play.png" alt="play" />
+                     </div>
+                     <div class="player_info_descr" style="background-image: url(img/process.png)">
+                        <p>Перейти к каталогу продукции</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="benefits" id="benefits">
+            <div class="container">
+               <h2 class="title" data-aos="fade-down">Наши преимущества</h2>
+               <div class="benefits_inner">
+                  <span class="rotate_text">О КОМПАНИИ</span>
+                  <div class="benefits-row">
+                     <div class="benefits_item" data-aos="fade-down">
+                        <div class="benefits_img">
+                           <img src="img/benefits-1.svg" alt="benefits" />
+                        </div>
+                        <p class="text">
+                           Собственная <br />
+                           логистика
+                        </p>
+                     </div>
+                     <div class="benefits_item" data-aos="fade-down" data-aos-delay="300">
+                        <div class="benefits_img">
+                           <img src="img/benefits-2.png" alt="benefits" />
+                        </div>
+                        <p class="text">
+                           Широкий <br />
+                           ассортимент
+                        </p>
+                     </div>
+                     <div class="benefits_item" data-aos="fade-down" data-aos-delay="500">
+                        <div class="benefits_img">
+                           <img src="img/benefits-3.svg" alt="benefits" />
+                        </div>
+                        <p class="text">Профессионализм</p>
+                     </div>
+                     <div class="benefits_item" style="padding-top: 20px" data-aos="fade-down">
+                        <div class="benefits_img">
+                           <img src="img/benefits-4.png" alt="benefits" />
+                        </div>
+                        <p class="text" style="padding-top: 30px">
+                           Изготовление по<br />
+                           индивидуальным<br />
+                           размерам
+                        </p>
+                     </div>
+                     <div class="benefits_item" data-aos="fade-down" data-aos-delay="300">
+                        <div class="benefits_img">
+                           <img src="img/benefits-5.png" alt="benefits" />
+                        </div>
+                        <p class="text">100 % целлюлоза</p>
+                     </div>
+                     <div class="benefits_item" data-aos="fade-down" data-aos-delay="500">
+                        <div class="benefits_img">
+                           <img src="img/benefits-6.png" alt="benefits" />
+                        </div>
+                        <p class="text">
+                           Нанесение <br />
+                           печати
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="production" id="production">
+            <div class="container">
+               <span class="rotate_text">НАША ПРОДУКЦИЯ</span>
+               <h2 class="production__title">Наша продукция</h2>
+               <div class="production_inner">
+                  <div class="pr-row">
+                     <div class="pr-col">
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-1.png);"
+                           data-aos="zoom-in"
+                        >
+                           <p class="production_text">
+                              КАРТОННЫЕ
+                              <span>КОРОБКИ</span>
+                           </p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                     </div>
+                     <div class="pr-col">
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-2.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="100"
+                        >
+                           <p class="production_text">СЛОЖНАЯ <span>ВЫСЕЧКА</span></p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-3.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="200"
+                        >
+                           <p class="production_text">
+                              КАРТОН
+                              <span>ПЛОСКИХ</span>
+                              <span>СЛОЕВ</span>
+                           </p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                     </div>
+                     <div class="pr-col">
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-4.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="300"
+                        >
+                           <p class="production_text">ГОФРОЛИСТ</p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-5.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="400"
+                        >
+                           <p class="production_text">
+                              БУМАЖНАЯ
+                              <span>УПАКОВКА</span>
+                           </p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pr-row">
+                     <div class="pr-col">
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-6.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="500"
+                        >
+                           <p class="production_text">АЛЬТЕРНАТИВНАЯ <span>УПАКОВКА</span></p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                     </div>
+                     <div class="pr-col">
+                        <a
+                           href="#"
+                           class="production_item"
+                           style="background-image: url(img/production-7.png);"
+                           data-aos="zoom-in"
+                           data-aos-delay="600"
+                        >
+                           <p class="production_text">УПАКОВОЧНЫЙ МАТЕРИАЛ</p>
+                           <p href="#" class="production_more">
+                              <span>ПОКАЗАТЬ ЕЩЕ</span>
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="offer">
+            <div class="container">
+               <div class="offer_top">
+                  <h2 class="title" data-aos="fade-down">Мы предлагаем</h2>
+                  <a href="production.html" class="more">СМОТРЕТЬ ВСЕ</a>
+               </div>
+               <div class="offer_inner">
+                  <div class="offer_tab">
+                     <span class="active" data-filter="info_1">ГОФРОПРОДУКЦИЯ</span>
+                     <span data-filter="info_2">ПЛАСТИКОВАЯ УПАКОВКА</span>
+                     <span data-filter="info_3">УПАКОВОЧНЫЙ МАТЕРИАЛ</span>
+                     <span data-filter="info_4">УПАКОВКА БУМАЖНАЯ</span>
+                     <span data-filter="info_5">ЧЕКОВАЯ ЛЕНТА</span>
+                     <span data-filter="info_6">ВСЕ</span>
+                  </div>
+                  <div class="offer_info">
+                     <p class="undertext active" data-cat="info_1">
+                        Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                     <p class="undertext" data-cat="info_2">
+                        2 Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                     <p class="undertext" data-cat="info_3">
+                        3 Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                     <p class="undertext" data-cat="info_4">
+                        4 Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                     <p class="undertext" data-cat="info_5">
+                        5 Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                     <p class="undertext" data-cat="info_6">
+                        6 Общие технические условия отвечают положениям ГОСТа 24370–80, пакеты бумажные используются для упаковки штучных и сыпучих
+                        товаров различного назначения (как правило, это бумажные пакеты для продуктов). Могут быть открытыми или закрытыми с прямым
+                        дном, с клапаном и фальцами, с шестиугольным или прямоугольным дном. Применяются в торговле, пищевой промышленности,
+                        используются компаниями по производству бижутерии и алкогольной продукции.
+                        <br /><br />
+                        Бумажные пакеты во многих европейских странах рекомендованы к замене полиэтиленовых на законодательном уровне. Они не
+                        загрязняют окружающую среду, пригодны к повторной переработку на целлюлозных предприятиях.
+                     </p>
+                  </div>
+               </div>
+               <div class="offer_slider_outer">
+                  <div class="swiper offer_slider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-aos="zoom-in">
+                           <div class="card">
+                              <div class="card_info">
+                                 <p class="card_title">НАЗВАНИЕ БОКСА</p>
+                                 <div class="card_img">
+                                    <img src="img/card-1.png" style="width: 190px" alt="card" />
+                                 </div>
+                                 <p class="text">
+                                    340 руб/m<sup><small>2</small></sup>
+                                 </p>
+                              </div>
+                              <a href="#" class="btn modal-call-btn">ПОЛУЧИТЬ РАСЧЕТ</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="100">
+                           <div class="card">
+                              <div class="card_info">
+                                 <p class="card_title">КАРТОН SBB (SBS)</p>
+                                 <div class="card_img">
+                                    <img src="img/card-2.png" style="width: 186px" alt="card" />
+                                 </div>
+                                 <p class="text">
+                                    340 руб/m<sup><small>2</small></sup>
+                                 </p>
+                              </div>
+                              <a href="#" class="btn modal-call-btn">ПОЛУЧИТЬ РАСЧЕТ</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="200">
+                           <div class="card">
+                              <div class="card_info">
+                                 <p class="card_title">КАРТОН SBB (SBS)</p>
+                                 <div class="card_img">
+                                    <img src="img/card-3.png" alt="card" />
+                                 </div>
+                                 <p class="text">
+                                    340 руб/m<sup><small>2</small></sup>
+                                 </p>
+                              </div>
+                              <a href="#" class="btn modal-call-btn">ПОЛУЧИТЬ РАСЧЕТ</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="300">
+                           <div class="card">
+                              <div class="card_info">
+                                 <p class="card_title">ЧЕКОВАЯ ЛЕНТА</p>
+                                 <div class="card_img">
+                                    <img src="img/card-4.png" alt="card" />
+                                 </div>
+                                 <p class="text">
+                                    340 руб/m<sup><small>2</small></sup>
+                                 </p>
+                              </div>
+                              <a href="#" class="btn modal-call-btn">ПОЛУЧИТЬ РАСЧЕТ</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper_bottom">
+                     <div class="swiper-button-prev offer_prev"></div>
+                     <div class="swiper-button-next offer_next"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="production services" id="services">
+            <div class="container">
+               <span class="rotate_text">НАШИ УСЛУГИ</span>
+               <h2 class="production__title">Наши услуги</h2>
+               <div class="services_inner">
+                  <div class="services__item">
+                     <div class="services__item-front">
+                        <h2 class="services__front-title">Подбор изделия<br>из гофрокартона</h2>
+                        <div class="services__front-img"></div>
+                     </div>
+                     <div class="services__item-back">
+                        <p class="services__back-text">
+                           Подбор изделий из гофрокартона – Подберем или изготовим необходимую упаковку под ваши задачи.
+                        </p>
+                        <a href="#" class="services__back-btn modal-call-btn">Получить расчет</a>
+                     </div>
+                     <div class="services__item-btn"></div>
+                  </div>
+                  <div class="services__item">
+                     <div class="services__item-front">
+                        <h2 class="services__front-title">Изготовление<br>изделий по вашим<br>размерам</h2>
+                        <div class="services__front-img"></div>
+                     </div>
+                     <div class="services__item-back">
+                        <p class="services__back-text">
+                           Изготовление изделий по вашим размерам – Изготавливаем изделия из гофрокартона по индивидуальным размерам любой сложности.
+                        </p>
+                        <a href="#" class="services__back-btn modal-call-btn">Получить расчет</a>
+                     </div>
+                     <div class="services__item-btn"></div>
+                  </div>
+                  <div class="services__item">
+                     <div class="services__item-front">
+                        <h2 class="services__front-title">Нанесение<br>печати</h2>
+                        <div class="services__front-img"></div>
+                     </div>
+                     <div class="services__item-back">
+                        <p class="services__back-text">
+                           Нанесение печати – Придадим уникальности вашей упаковки с помощью нанесения фирменного изображения или логотипа.
+                        </p>
+                        <a href="#" class="services__back-btn modal-call-btn">Получить расчет</a>
+                     </div>
+                     <div class="services__item-btn"></div>
+                  </div>
+                  <div class="services__item">
+                     <div class="services__item-front">
+                        <h2 class="services__front-title">Доставка<br>товара</h2>
+                        <div class="services__front-img"></div>
+                     </div>
+                     <div class="services__item-back">
+                        <p class="services__back-text">
+                           Доставка товара – Доставляем товары в сохранности по территории Республики Бурятия и Иркутской области.
+                        </p>
+                        <a href="#" class="services__back-btn modal-call-btn">Получить расчет</a>
+                     </div>
+                     <div class="services__item-btn"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="map" id="map">
+            <div class="map-block"  data-aos="fade-left">
+               <img src="img/map.png" alt="" class="map-img map1" style="display: block" />
+               <img src="img/map2.png" alt="" class="map-img map2" style="display: none" />
+               <div class="info-map">
+                  <div class="block active" id="map1">
+                     <p class="city">г. Улан-Удэ</p>
+                     <div class="mail" style="margin-bottom: 10px">
+                        <img src="img/mail.png" alt="" />
+                        <p class="mail-text">info@aa-klever.ru</p>
+                     </div>
+                     <p class="adress">ул. Смолина 67б,<br> офис 208</p>
+                     <br>
+                     <p class="adress">Время работы: пн-пт 8:00 - 17:00</p>
+                     <div class="tel-num">
+                        <img src="img/tel-img.png" alt="" />
+                        <p class="tem-text" style="padding-top: 12px">+7 (924) 458-14-20<span>458-14-30</span></p>
+                     </div>
+                  </div>
+                  <div class="block" id="map2">
+                     <p class="city">г. Иркутск</p>
+                     <div class="mail" style="margin-bottom: 10px">
+                        <img src="img/mail.png" alt="" />
+                        <p class="mail-text">info38@aa-klever.ru</p>
+                     </div>
+                     <p class="adress">ул. Сергеева 3а,<br> офис 304</p>
+                     <br>
+                     <p class="adress">Время работы: пн-пт 8:00 - 17:00</p>
+                     <div class="tel-num">
+                        <img src="img/tel-img.png" alt="" />
+                        <p class="tem-text" style="padding-top: 12px">+7 (924) 835-04-09<span>834-04-09</span></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="news">
+            <div class="container">
+               <div class="news_top">
+                  <h2 class="title" data-aos="fade-down">Новости компании</h2>
+                  <a href="#" class="more">СМОТРЕТЬ ВСЕ</a>
+               </div>
+               <div class="news_slider_outer">
+                  <div class="swiper news_slider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-aos="zoom-in">
+                           <div class="news_item">
+                              <div class="news_img">
+                                 <img src="img/news-1.png" alt="news" />
+                              </div>
+                              <div class="news_info">
+                                 <p class="news_title">Селенгинский ЦКК подводит итоги работы в 1 квартале 2015 года</p>
+                                 <div class="news_bottom">
+                                    <span class="date"> 12.05.2021 </span>
+                                    <a href="#" class="more"> Читать далее </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="100">
+                           <div class="news_item">
+                              <div class="news_img">
+                                 <img src="img/news-2.png" alt="news" />
+                              </div>
+                              <div class="news_info">
+                                 <p class="news_title">Селенгинский ЦКК подводит итоги работы в 1 квартале 2015 года</p>
+                                 <div class="news_bottom">
+                                    <span class="date"> 12.05.2021 </span>
+                                    <a href="#" class="more"> Читать далее </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-delay="200">
+                           <div class="news_item">
+                              <div class="news_img">
+                                 <img src="img/news-3.png" alt="news" />
+                              </div>
+                              <div class="news_info">
+                                 <p class="news_title">Селенгинский ЦКК подводит итоги работы в 1 квартале 2015 года</p>
+                                 <div class="news_bottom">
+                                    <span class="date"> 12.05.2021 </span>
+                                    <a href="#" class="more"> Читать далее </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper_bottom">
+                     <div class="swiper-button-prev news_prev"></div>
+                     <div class="swiper-button-next news_next"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer" id="footer">
+         <div class="container">
+            <div class="footer_inner">
+               <div class="footer_left">
+                  <div class="footer_info">
+                     <nav class="footer_nav">
+                        <ul>
+                           <li>
+                              <a href="#production">Каталог</a>
+                           </li>
+                           <li>
+                              <a href="#services">Услуги</a>
+                           </li>
+                           <li>
+                              <a href="#benefits"> О компании</a>
+                           </li>
+                           <li>
+                              <a href="#news">Новости</a>
+                           </li>
+                        </ul>
+                     </nav>
+
+                     <div class="footer_contacts">
+                        <p>
+                           <img src="../img/phone-2.svg" alt="phone" />
+                           <span style="margin-right: 10px;">Улан-Удэ</span>
+                           <a href="+73012581420" style="margin-right: 10px;">  +7 (<span>924</span>) 458-14-20, </a>
+                           <a href="+73012581430">458-14-20</a>
+                        </p>
+                        <p>
+                           <img src="../img/phone-2.svg" alt="phone" />
+                           <span style="margin-right: 19px;">Иркутск</span>
+                           <a href="tel:+73952486362" style="margin-right: 10px;">  +7 (<span>924</span>) 835-04-09, </a>
+                           <a href="tel:+73952640409">835-04-09</a>
+                        </p>
+                        <p>
+                           <img src="../img/email.svg" alt="email" />
+                           <a href="mailto:username@gmail.com" style="text-decoration: underline 1px solid #54a143"> info@aa-klever.ru </a>
+                        </p>
+                        <p>
+                           <img src="../img/timeWork.png" alt="email" />
+                           <a href="#"> Пн-пт: 8:00 - 17:00 Сб-вс: выходной </a>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="footer_left_policy">
+                     <a href="#" class="policy"> Политика конфиденциальности </a>
+                  </div>
+               </div>
+
+               <div class="footer_right">
+                  <a href="index.html" class="logo">
+                     <img class="footer-logo" src="img/footer-logo.svg" alt="logo" />
+                  </a>
+                  <div class="footer_social">
+                     <a href="#">
+                        <i class="icon-vk"></i>
+                     </a>
+                     <a href="#">
+                        <i class="icon-youtube"></i>
+                     </a>
+                     <a href="#">
+                        <i class="icon-telegram"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="call_modal">
+         <div class="call_modal-wrap">
+            <div class="close">&times;</div>
+            <form class="call_modal_inner">
+               <h3 class="call_title">Оставьте заявку</h3>
+               <input type="firstname" name="name" placeholder="Ваше имя" />
+               <input type="tel" name="tel" placeholder="Номер телефона" />
+               <button type="submit" class="btn call_modal__send">Отправить</button>
+            </form>
+         </div>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         window.onload = function () {
+            document.querySelector(".preloader").classList.add("active");
+         };
+      </script>
+   </body>
+</html>
